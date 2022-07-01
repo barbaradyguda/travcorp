@@ -6,7 +6,8 @@
       "rate": 4.6,
       "price": 2.877,
       "oldPrice": 3.385,
-      "image": "/images/european-quest.jpg"
+      "image": "/images/european-quest.jpg",
+      "imageAlt": "Woman next to the colorful wall"
     },
     {
       "name": "Simply Italy",
@@ -14,7 +15,8 @@
       "rate": 4.4,
       "price": 1.832,
       "oldPrice": 2.155,
-      "image": "/images/simply-italy.jpg"
+      "image": "/images/simply-italy.jpg",
+      "imageAlt": "Woman and man next to the river"
     },
     {
       "name": "Italian Expresso",
@@ -22,7 +24,8 @@
       "rate": 4.5,
       "price": 1.245,
       "oldPrice": 1.465,
-      "image": "/images/italian-espresso.jpg"
+      "image": "/images/italian-espresso.jpg",
+      "imageAlt": "Two scooters on the city road"
     }
   ]
 }

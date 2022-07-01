@@ -1,11 +1,10 @@
-import './App.css';
-import Trips from './components/Trips';
+import "./App.css";
+import Trips from "./components/Trips";
 
 function App() {
   return (
     <div className="App">
-     
-      <Trips/>
+      <Trips />
     </div>
   );
 }

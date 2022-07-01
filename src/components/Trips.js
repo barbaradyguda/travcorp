@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  Box,
-  Typography,
-  Grid,
-} from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import axios from "axios";
-import TripCard from "./TripCard"
+import TripCard from "./TripCard";
+import { styles } from "./styles";
 
 const Trips = () => {
   const [trips, setTrips] = useState([]);
@@ -28,21 +25,26 @@ const Trips = () => {
   }, []);
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Grid container spacing={1} sx={{ width: { lg: "59%", xs: "90%" } }}>
+    <Box sx={styles.mainContainer}>
+      <Grid container spacing={1} sx={styles.gridContainer}>
         <Grid item xs={12}>
-          <Typography
-            variant="h1"
-            sx={{ fontWeight: "900", fontSize: 20, pt: 6, pb: 4 }}
-          >
+          <Typography variant="h1" sx={styles.pageTitle}>
             Recently viewed trips
           </Typography>
         </Grid>
 
         {trips &&
-          trips.map((trip) => (
-            <Grid item xs={4} style={{}}>
-             <TripCard trip={trip}/>
+          trips.map((trip, index) => (
+            <Grid
+              item
+              xl={4}
+              lg={4}
+              md={6}
+              xs={12}
+              key={index}
+              sx={styles.gridItem}
+            >
+              <TripCard trip={trip} />
             </Grid>
           ))}
       </Grid>
